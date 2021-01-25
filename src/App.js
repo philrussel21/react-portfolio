@@ -1,6 +1,6 @@
 import React from 'react';
 import { Router } from '@reach/router';
-import { makeStyles } from '@material-ui/core/styles';
+import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import './styles/main.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -11,33 +11,45 @@ import NotFound from './components/NotFound';
 import Footer from './components/Footer';
 import { Grid } from '@material-ui/core';
 
+const theme = createMuiTheme();
+const defaultTypography = theme.typography;
+theme.typography.h1 = {
+  ...defaultTypography.h1,
+  fontSize: '6rem',
+  [theme.breakpoints.down('md')]: {
+    fontSize: '3rem',
+  },
+};
+
 const App = () => {
-  const useStyles = makeStyles((theme) => ({
+  const useStyles = makeStyles({
     main: {
       flexGrow: 2
     },
     cont: {
       height: '100vh'
     }
-  }));
+  });
 
   const classes = useStyles();
   return (
-    <Grid container direction="column" className={classes.cont}>
-      <Navbar />
-      <Grid item className={classes.main}>
-        <Router>
-          <Home path="/" />
-          <About path="/about" />
-          <Projects path="/projects" />
-          <Contact path="/contact" />
-          <NotFound default />
-        </Router>
+    <ThemeProvider theme={theme}>
+      <Grid container direction="column" className={classes.cont}>
+        <Navbar />
+        <Grid item container alignItems="center" className={classes.main}>
+          <Router>
+            <Home path="/" />
+            <About path="/about" />
+            <Projects path="/projects" />
+            <Contact path="/contact" />
+            <NotFound default />
+          </Router>
+        </Grid>
+        <Grid item container direction="column-reverse" className={classes.footer}>
+          <Footer />
+        </Grid>
       </Grid>
-      <Grid item container direction="column-reverse" className={classes.footer}>
-        <Footer />
-      </Grid>
-    </Grid>
+    </ThemeProvider>
   );
 };
 
