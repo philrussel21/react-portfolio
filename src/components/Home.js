@@ -2,7 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import hi from '../media/hi.png';
-import { Typography, Grid, Paper } from '@material-ui/core';
+import { Typography, Grid, Paper, Button } from '@material-ui/core';
+import { Link } from '@reach/router';
 
 export default function Home() {
   const useStyles = makeStyles({
@@ -16,8 +17,8 @@ export default function Home() {
       padding: "0.5em",
       backgroundColor: "#7d2020"
     },
-    heading1: {
-
+    pill: {
+      borderRadius: 25
     }
   });
 
@@ -40,6 +41,13 @@ export default function Home() {
           <Typography variant="h4">
             Turning ideas into reality through Software Development
           </Typography>
+        </Grid>
+        <Grid item>
+          <Link to="/projects">
+            <Button variant="contained" color="secondary" className={classes.pill}>
+              See my work
+          </Button>
+          </Link>
         </Grid>
       </Grid>
     </Container>
