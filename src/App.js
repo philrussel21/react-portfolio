@@ -18,6 +18,16 @@ const theme = createMuiTheme({
     },
     secondary: {
       main: "#ffba49"
+    },
+    background: {
+      paper: "#7d2020"
+    }
+  },
+  overrides: {
+    MuiPaper: {
+      root: {
+        color: "#fff"
+      }
     }
   }
 });
@@ -27,6 +37,13 @@ theme.typography.h1 = {
   fontSize: '6rem',
   [theme.breakpoints.down('md')]: {
     fontSize: '3rem',
+  },
+};
+theme.typography.h2 = {
+  ...defaultTypography.h2,
+  fontSize: '3.75rem',
+  [theme.breakpoints.down('md')]: {
+    fontSize: '2rem',
   },
 };
 
