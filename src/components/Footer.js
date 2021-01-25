@@ -5,12 +5,16 @@ import { Container } from '@material-ui/core';
 
 
 export default function Footer() {
-  const useStyles = makeStyles((theme) => ({
+  const useStyles = makeStyles({
     devLogo: {
-      height: 300,
+      boxSizing: "content-box",
+      borderBottom: "10px solid #7d2020",
+      borderRadius: 25,
+      height: 200,
       width: "100%",
+
     }
-  }));
+  });
 
   const classes = useStyles();
 
