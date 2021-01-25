@@ -11,7 +11,13 @@ import NotFound from './components/NotFound';
 import Footer from './components/Footer';
 import { Grid } from '@material-ui/core';
 
-const theme = createMuiTheme();
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: "#7d2020"
+    }
+  }
+});
 const defaultTypography = theme.typography;
 theme.typography.h1 = {
   ...defaultTypography.h1,
