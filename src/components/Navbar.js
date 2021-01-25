@@ -9,7 +9,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 
 export default function Navbar() {
-  const useStyles = makeStyles((theme) => ({
+  const useStyles = makeStyles({
     toolBar: {
       justifyContent: 'space-between'
     },
@@ -18,7 +18,7 @@ export default function Navbar() {
       width: 80,
       cursor: 'pointer'
     }
-  }));
+  });
 
   const classes = useStyles();
 
