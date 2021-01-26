@@ -1,9 +1,10 @@
+import { Container } from '@material-ui/core';
 import React from 'react';
 
 export default function Projects() {
   return (
-    <div>
+    <Container>
       <h1>Projects Page</h1>
-    </div>
+    </Container>
   );
 }
