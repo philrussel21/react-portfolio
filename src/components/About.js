@@ -5,7 +5,10 @@ import { ReactComponent as Js } from '../media/tech_icons/js.svg';
 import { ReactComponent as NodeJS } from '../media/tech_icons/node.svg';
 // import { ReactComponent as Ruby } from '../media/tech_icons/ruby.svg';
 // import { ReactComponent as Rails } from '../media/tech_icons/rails.svg';
+import { ReactComponent as Sass } from '../media/tech_icons/sass.svg';
 
+import reactIcon from '../media/tech_icons/react.svg';
+import mongodb from '../media/tech_icons/mongodb.svg';
 import postgres from '../media/tech_icons/postgres.svg';
 import ruby from '../media/tech_icons/ruby.svg';
 import rails from '../media/tech_icons/rails.svg';
@@ -36,9 +39,11 @@ export default function About() {
           <Grid item xs={12}>
             <Card>
               <CardContent>
+
                 <Typography variant="h2" align="center">
                   Tech Stack
               </Typography>
+
                 <Grid container>
                   <Icon>
                     <Html />
@@ -61,8 +66,19 @@ export default function About() {
                     <NodeJS />
                   </Icon>
                   <Icon>
+                    {/* <Mongodb /> */}
+                    <img src={mongodb} width="50" height="50" alt="MongoDB" />
+                  </Icon>
+                  <Icon>
                     {/* <Postgres /> */}
                     <img src={postgres} width="50" height="50" alt="PostgreSQL" />
+                  </Icon>
+                  <Icon>
+                    {/* <ReactIcon /> */}
+                    <img src={reactIcon} width="50" height="50" alt="React" />
+                  </Icon>
+                  <Icon>
+                    <Sass />
                   </Icon>
                 </Grid>
               </CardContent>
