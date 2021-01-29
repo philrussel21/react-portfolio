@@ -23,6 +23,8 @@ import netlify from '../media/tech_tools/netlify.svg';
 import postman from '../media/tech_tools/postman.svg';
 import terminal from '../media/tech_tools/terminal.svg';
 import trello from '../media/tech_tools/trello.svg';
+import jest from '../media/tech_tools/jest.svg';
+import mocha from '../media/tech_tools/mocha.svg';
 
 
 
@@ -56,7 +58,7 @@ export default function About() {
                   Tech Stack
               </Typography>
 
-                <Grid container>
+                <Grid container spacing={1}>
                   <Icon>
                     <Html />
                   </Icon>
@@ -104,7 +106,7 @@ export default function About() {
                 <Typography variant="h2" align="center">
                   Tech Tools
               </Typography>
-                <Grid container >
+                <Grid container spacing={1}>
                   <Icon>
                     <img src={aws} width="50" height="50" alt="AWS" />
                   </Icon>
@@ -125,6 +127,12 @@ export default function About() {
                   </Icon>
                   <Icon>
                     <img src={trello} width="50" height="50" alt="Trello" />
+                  </Icon>
+                  <Icon>
+                    <img src={jest} width="50" height="50" alt="Jest" />
+                  </Icon>
+                  <Icon>
+                    <img src={mocha} width="50" height="50" alt="Mocha" />
                   </Icon>
                 </Grid>
               </CardContent>
