@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Icon({ children }) {
   return (
-    <Grid item>
+    <Grid item container xs={3} justify="center">
       {children}
     </Grid>
   );
