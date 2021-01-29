@@ -14,7 +14,7 @@ export default function Navbar() {
       justifyContent: 'space-between'
     },
     logo: {
-      height: 80,
+      height: 50,
       width: 80,
       cursor: 'pointer'
     },
