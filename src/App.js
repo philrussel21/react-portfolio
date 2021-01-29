@@ -57,7 +57,7 @@ const App = () => {
   const classes = useStyles();
   return (
     <ThemeProvider theme={theme}>
-      <Grid container direction="column" className={classes.cont} spacing={4}>
+      <Grid container direction="column" className={classes.cont}>
         <Navbar />
         <Grid item container alignItems="center" className={classes.main}>
           <Router>

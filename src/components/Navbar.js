@@ -17,6 +17,9 @@ export default function Navbar() {
       height: 80,
       width: 80,
       cursor: 'pointer'
+    },
+    btn: {
+      marginTop: 'auto'
     }
   });
 
@@ -26,8 +29,8 @@ export default function Navbar() {
     <AppBar position="static">
       <Toolbar className={classes.toolBar}>
         <Logo className={classes.logo} />
-        <IconButton edge="start" color="inherit" aria-label="menu">
-          <MenuIcon />
+        <IconButton edge="start" color="inherit" aria-label="menu" className={classes.btn}>
+          <MenuIcon fontSize="large" />
         </IconButton>
       </Toolbar>
     </AppBar>
