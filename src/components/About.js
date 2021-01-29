@@ -50,7 +50,7 @@ export default function About() {
 
         <Grid item container spacing={2}>
           {/* Tech Stack Card*/}
-          <Grid item xs={12}>
+          <Grid item xs={12} sm={6}>
             <Card>
               <CardContent>
 
@@ -100,7 +100,7 @@ export default function About() {
           </Grid>
 
           {/* Tech Tools Card */}
-          <Grid item xs={12}>
+          <Grid item xs={12} sm={6}>
             <Card>
               <CardContent>
                 <Typography variant="h2" align="center">
