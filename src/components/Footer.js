@@ -9,17 +9,21 @@ export default function Footer() {
     devLogo: {
       boxSizing: "content-box",
       borderBottom: "10px solid #7d2020",
-      borderRadius: 25,
-      height: 200,
-      width: "100%",
-
+      borderRadius: 25
+    },
+    devCont: {
+      display: 'flex',
+      alignItems: 'flex-end',
+      justifyContent: 'center',
+      maxWidth: 600,
+      height: 200
     }
   });
 
   const classes = useStyles();
 
   return (
-    <Container>
+    <Container className={classes.devCont}>
       <Dev className={classes.devLogo} />
     </Container>
   );
