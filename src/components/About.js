@@ -36,7 +36,7 @@ export default function About() {
 
   return (
     <Container>
-      <Grid container>
+      <Grid container direction="column" spacing={2}>
         <Grid item>
           <Typography variant="h1" align="center">
             About Me
@@ -46,7 +46,7 @@ export default function About() {
       </Typography>
         </Grid>
 
-        <Grid item container>
+        <Grid item container spacing={2}>
           {/* Tech Stack Card*/}
           <Grid item xs={12}>
             <Card>

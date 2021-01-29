@@ -51,16 +51,13 @@ const App = () => {
   const useStyles = makeStyles({
     main: {
       flexGrow: 2
-    },
-    cont: {
-      height: '100vh'
     }
   });
 
   const classes = useStyles();
   return (
     <ThemeProvider theme={theme}>
-      <Grid container direction="column" className={classes.cont}>
+      <Grid container direction="column" className={classes.cont} spacing={4}>
         <Navbar />
         <Grid item container alignItems="center" className={classes.main}>
           <Router>
