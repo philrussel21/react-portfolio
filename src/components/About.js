@@ -32,6 +32,10 @@ import mocha from '../media/tech_tools/mocha.svg';
 
 export default function About() {
   const useStyles = makeStyles({
+    iconImg: {
+      width: 50,
+      height: 50
+    }
   });
 
   const classes = useStyles();
@@ -63,33 +67,33 @@ export default function About() {
                     <Html />
                   </Icon>
                   <Icon>
-                    <img src={css} width="50" height="50" alt="CSS3" />
+                    <img src={css} className={classes.iconImg} alt="CSS3" />
                   </Icon>
                   <Icon>
                     <Js />
                   </Icon>
                   <Icon>
                     {/* <Ruby /> */}
-                    <img src={ruby} width="50" height="50" alt="Ruby" />
+                    <img src={ruby} className={classes.iconImg} alt="Ruby" />
                   </Icon>
                   <Icon>
                     {/* <Rails /> */}
-                    <img src={rails} width="50" height="50" alt="Ruby on Rails" />
+                    <img src={rails} className={classes.iconImg} alt="Ruby on Rails" />
                   </Icon>
                   <Icon>
                     <NodeJS />
                   </Icon>
                   <Icon>
                     {/* <Mongodb /> */}
-                    <img src={mongodb} width="50" height="50" alt="MongoDB" />
+                    <img src={mongodb} className={classes.iconImg} alt="MongoDB" />
                   </Icon>
                   <Icon>
                     {/* <Postgres /> */}
-                    <img src={postgres} width="50" height="50" alt="PostgreSQL" />
+                    <img src={postgres} className={classes.iconImg} alt="PostgreSQL" />
                   </Icon>
                   <Icon>
                     {/* <ReactIcon /> */}
-                    <img src={reactIcon} width="50" height="50" alt="React" />
+                    <img src={reactIcon} className={classes.iconImg} alt="React" />
                   </Icon>
                   <Icon>
                     <Sass />
@@ -108,31 +112,31 @@ export default function About() {
               </Typography>
                 <Grid container spacing={1}>
                   <Icon>
-                    <img src={aws} width="50" height="50" alt="AWS" />
+                    <img src={aws} className={classes.iconImg} alt="AWS" />
                   </Icon>
                   <Icon>
                     <Git />
                   </Icon>
                   <Icon>
-                    <img src={heroku} width="50" height="50" alt="Heroku" />
+                    <img src={heroku} className={classes.iconImg} alt="Heroku" />
                   </Icon>
                   <Icon>
-                    <img src={netlify} width="50" height="50" alt="Netlify" />
+                    <img src={netlify} className={classes.iconImg} alt="Netlify" />
                   </Icon>
                   <Icon>
-                    <img src={postman} width="50" height="50" alt="Postman" />
+                    <img src={postman} className={classes.iconImg} alt="Postman" />
                   </Icon>
                   <Icon>
-                    <img src={terminal} width="50" height="50" alt="Terminal" />
+                    <img src={terminal} className={classes.iconImg} alt="Terminal" />
                   </Icon>
                   <Icon>
-                    <img src={trello} width="50" height="50" alt="Trello" />
+                    <img src={trello} className={classes.iconImg} alt="Trello" />
                   </Icon>
                   <Icon>
-                    <img src={jest} width="50" height="50" alt="Jest" />
+                    <img src={jest} className={classes.iconImg} alt="Jest" />
                   </Icon>
                   <Icon>
-                    <img src={mocha} width="50" height="50" alt="Mocha" />
+                    <img src={mocha} className={classes.iconImg} alt="Mocha" />
                   </Icon>
                 </Grid>
               </CardContent>

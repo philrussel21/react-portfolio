@@ -60,7 +60,7 @@ const App = () => {
       <Grid container direction="column" className={classes.cont}>
         <Navbar />
         <Grid item container alignItems="center" className={classes.main}>
-          <Router>
+          <Router style={{ width: '100%' }}>
             <Home path="/" />
             <About path="/about" />
             <Projects path="/projects" />
