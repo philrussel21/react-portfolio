@@ -20,8 +20,8 @@ export default function Contact() {
       display: 'flex',
       flexDirection: 'column',
       padding: '1.5em',
-      backgroundColor: '#eee',
-      color: '#000',
+      backgroundColor: '#000',
+      color: '#fff',
       textAlign: 'center',
       // transforms card format depending on screen size
       [theme.breakpoints.up('sm')]: {
@@ -39,6 +39,9 @@ export default function Contact() {
     img: {
       width: 150,
       height: 150
+    },
+    content: {
+      marginBottom: '1em'
     }
   }));
 
@@ -46,14 +49,18 @@ export default function Contact() {
 
   return (
     <Container>
-      <Grid container>
-        <Grid item>
-          <Typography variant="h1" align="center">
-            Contact
+      <Grid container direction="column">
+        <Grid item container direction="column" spacing={4} className={classes.content}>
+          <Grid item>
+            <Typography variant="h1" align="center">
+              Contact
           </Typography>
-          <Typography variant="body1" align="center">
-            Interested in working together? Here's my card.
+          </Grid>
+          <Grid item>
+            <Typography variant="body1" align="center">
+              Interested in working together? Here's my card.
           </Typography>
+          </Grid>
         </Grid>
 
         {/* Contact Card */}
@@ -68,7 +75,7 @@ export default function Contact() {
               <Typography variant='h2'>
                 Phil Antiporda
               </Typography>
-              <Typography variant='subtitle1' display="block">
+              <Typography variant='subtitle2' display="block">
                 Junior Full Stack Developer
               </Typography>
               <Grid container justify="center">
