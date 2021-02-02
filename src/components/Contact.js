@@ -40,7 +40,7 @@ export default function Contact() {
       width: 150,
       height: 150
     },
-    content: {
+    contentCont: {
       marginBottom: '1em'
     }
   }));
@@ -50,7 +50,7 @@ export default function Contact() {
   return (
     <Container>
       <Grid container direction="column">
-        <Grid item container direction="column" spacing={4} className={classes.content}>
+        <Grid item container direction="column" spacing={4} className={classes.contentCont}>
           <Grid item>
             <Typography variant="h1" align="center">
               Contact
