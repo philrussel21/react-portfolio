@@ -26,19 +26,19 @@ export default function Home() {
 
   return (
     <Container>
-      <Grid container direction="column" alignItems="center">
+      <Grid container direction="column" alignItems="center" spacing={4}>
         <Grid item container justify="center">
           <Paper className={classes.badge} elevation={10}>
             <img src={hi} alt="waving avatar" className={classes.img} />
           </Paper>
         </Grid>
         <Grid item>
-          <Typography variant="h1">
+          <Typography variant="h1" align="center">
             Phil Antiporda
           </Typography>
         </Grid>
         <Grid item>
-          <Typography variant="h4">
+          <Typography variant="subtitle1" align="center">
             Turning ideas into reality through Software Development
           </Typography>
         </Grid>

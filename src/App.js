@@ -29,11 +29,15 @@ const theme = createMuiTheme({
         color: "#fff"
       }
     }
+  },
+  typography: {
+    fontFamily: `"Space Mono", "Helvetica", "Arial", "sans-serif"`,
   }
 });
 const defaultTypography = theme.typography;
 theme.typography.h1 = {
   ...defaultTypography.h1,
+  fontFamily: `"Bungee", "cursive"`,
   fontSize: '6rem',
   [theme.breakpoints.down('md')]: {
     fontSize: '3rem',
