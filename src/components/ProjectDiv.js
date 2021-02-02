@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Grid, Card, CardContent } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 
 export default function ProjectDiv({ children, content, bgDesign }) {
-  const [isHovering, setIsHovering] = useState(false);
+  // for next feature
+  // const [isHovering, setIsHovering] = useState(false);
   const useStyles = makeStyles({
     cardCont: {
       display: 'flex',
@@ -13,9 +14,10 @@ export default function ProjectDiv({ children, content, bgDesign }) {
     card: bgDesign
   });
 
-  const handleMouseOver = () => {
-    setIsHovering(!isHovering);
-  };
+  // for next feature
+  // const handleMouseOver = () => {
+  //   setIsHovering(!isHovering);
+  // };
 
   const classes = useStyles();
 
