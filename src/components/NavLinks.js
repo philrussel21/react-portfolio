@@ -18,7 +18,6 @@ export default function NavLinks() {
       flexGrow: 1,
       color: '#fff',
       textAlign: 'center',
-      color: "#fff",
     },
     navLink: {
       fontFamily: `"Bungee", "cursive"`,

@@ -1,4 +1,4 @@
-import { Card, CardActions, CardContent, Container, Grid, Typography } from '@material-ui/core';
+import { Container, Grid, Typography } from '@material-ui/core';
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -51,7 +51,7 @@ export default function Projects() {
       backgroundColor: "#BE0000"
     },
     curtainCo: {
-      background: `rgb(31, 144, 77)`,
+      backgroundColor: `rgb(31, 144, 77)`,
       // background: `linear-gradient(90deg, rgba(31, 144, 77, 0.8267507686668417) 41%, rgba(92, 156, 185, 1) 74%)`
       background: `radial-gradient(circle, rgba(31,144,77,0.8267507686668417) 50%, rgba(92,156,185,1) 85%)`
     },
