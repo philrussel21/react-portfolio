@@ -1,4 +1,4 @@
-import { Container, Typography, Grid, Card, CardContent } from '@material-ui/core';
+import { Container, Typography, Grid, Card, CardContent, Paper } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import React from 'react';
 import Icon from './Icon';
@@ -35,6 +35,9 @@ export default function About() {
     iconImg: {
       width: 50,
       height: 50
+    },
+    contentCont: {
+      marginBottom: '1em'
     }
   });
 
@@ -42,15 +45,15 @@ export default function About() {
 
   return (
     <Container>
-      <Grid container direction="column" spacing={2}>
-        <Grid item container direction="column" spacing={4}>
+      <Grid container direction="column">
+        <Grid item container direction="column" spacing={4} className={classes.contentCont}>
           <Grid item>
             <Typography variant="h1" align="center">
               About Me
             </Typography>
           </Grid>
           <Grid item>
-            <Typography variant="body1">
+            <Typography variant="body1" align="center">
               I love adventures and new experiences. I like treating challenges as opportunities and failures as lessons. As a developer, I acknowledge and practice the need to constantly update, learn and apply new skills to be adaptable, a better problem solver and a successful risk-taker. In my leisure, I enjoy travelling and trying new things to expand my horizon.
             </Typography>
           </Grid>
