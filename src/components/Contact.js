@@ -26,7 +26,8 @@ export default function Contact() {
       // transforms card format depending on screen size
       [theme.breakpoints.up('sm')]: {
         flexDirection: 'row',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        maxWidth: 500
       }
     },
     imgBg: {
@@ -64,8 +65,8 @@ export default function Contact() {
         </Grid>
 
         {/* Contact Card */}
-        <Grid item xs={12}>
-          <Card className={classes.card}>
+        <Grid item container xs={12} justify="center" alignItems="center">
+          <Card className={classes.card} raised>
             <CardMedia>
               <div className={classes.imgBg}>
                 <img src={okay} className={classes.img} alt="Thumbs-up Avatar" />
