@@ -8,6 +8,7 @@ import kewlors from '../media/project_logos/kewlors.svg';
 import longShot from '../media/project_logos/LongShot.svg';
 import orbisFoods from '../media/project_logos/OrbisFoods.svg';
 import tcc from '../media/project_logos/TCC.svg';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import ProjectDiv from './ProjectDiv';
 
 
@@ -47,6 +48,9 @@ export default function Projects() {
           </ProjectDiv>
           <ProjectDiv>
             <img src={kewlors} className={classes.projImg} alt="KewLors" />
+          </ProjectDiv>
+          <ProjectDiv>
+            <GitHubIcon className={classes.projImg} />
           </ProjectDiv>
         </Grid>
       </Grid>
