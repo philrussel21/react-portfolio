@@ -33,6 +33,9 @@ export default function Navbar() {
     },
     btn: {
       marginTop: 'auto'
+    },
+    header: {
+      marginBottom: '1em'
     }
   });
 
@@ -70,7 +73,7 @@ export default function Navbar() {
   }))(MenuItem);
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" className={classes.header}>
       <Toolbar className={classes.toolBar}>
         <Logo className={classes.logo} />
         <IconButton edge="start" color="inherit" aria-label="menu" aria-haspopup="true" className={classes.btn}
