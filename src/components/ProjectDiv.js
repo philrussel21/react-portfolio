@@ -3,13 +3,14 @@ import { Grid, Card, CardContent } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 
-export default function ProjectDiv({ children, content }) {
+export default function ProjectDiv({ children, content, bgDesign }) {
   const [isHovering, setIsHovering] = useState(false);
   const useStyles = makeStyles({
     cardCont: {
       display: 'flex',
       justifyContent: 'center'
-    }
+    },
+    card: bgDesign
   });
 
   const handleMouseOver = () => {
@@ -36,7 +37,7 @@ export default function ProjectDiv({ children, content }) {
     //   </Card>
     // </Grid>
     <Grid item xs={12}>
-      <Card>
+      <Card className={classes.card}>
         <CardContent className={classes.cardCont}>
           {children}
         </CardContent>
