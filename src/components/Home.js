@@ -44,7 +44,7 @@ export default function Home() {
         </Grid>
         <Grid item>
           <Link to="/projects">
-            <Button variant="contained" color="secondary" className={classes.pill}>
+            <Button variant="contained" color="secondary" size="large" className={classes.pill}>
               See my work
           </Button>
           </Link>
