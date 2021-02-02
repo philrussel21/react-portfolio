@@ -43,13 +43,17 @@ export default function About() {
   return (
     <Container>
       <Grid container direction="column" spacing={2}>
-        <Grid item>
-          <Typography variant="h1" align="center">
-            About Me
-        </Typography>
-          <Typography variant="body1">
-            I love adventures and new experiences. I like treating challenges as opportunities and failures as lessons. As a developer, I acknowledge and practice the need to constantly update, learn and apply new skills to be adaptable, a better problem solver and a successful risk-taker. In my leisure, I enjoy travelling and trying new things to expand my horizon.
-      </Typography>
+        <Grid item container direction="column" spacing={4}>
+          <Grid item>
+            <Typography variant="h1" align="center">
+              About Me
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Typography variant="body1">
+              I love adventures and new experiences. I like treating challenges as opportunities and failures as lessons. As a developer, I acknowledge and practice the need to constantly update, learn and apply new skills to be adaptable, a better problem solver and a successful risk-taker. In my leisure, I enjoy travelling and trying new things to expand my horizon.
+            </Typography>
+          </Grid>
         </Grid>
 
         <Grid item container spacing={2}>
