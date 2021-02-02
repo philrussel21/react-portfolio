@@ -77,7 +77,7 @@ export default function Projects() {
           </Typography>
         </Grid>
 
-        <Grid item container spacing={2}>
+        <Grid item container spacing={4}>
           <ProjectDiv content={content} bgDesign={designs.curtainCo}>
             <img src={tcc} className={classes.projImg} alt="The Curtain Co." />
           </ProjectDiv>
