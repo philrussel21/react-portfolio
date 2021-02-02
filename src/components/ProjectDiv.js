@@ -36,7 +36,7 @@ export default function ProjectDiv({ children, content, bgDesign }) {
     //     }
     //   </Card>
     // </Grid>
-    <Grid item xs={12}>
+    <Grid item xs={12} md={6}>
       <Card className={classes.card}>
         <CardContent className={classes.cardCont}>
           {children}

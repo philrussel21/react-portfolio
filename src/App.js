@@ -54,7 +54,9 @@ theme.typography.h2 = {
 const App = () => {
   const useStyles = makeStyles({
     main: {
-      flexGrow: 2
+      flexGrow: 2,
+      maxWidth: 900,
+      margin: 'auto'
     },
     cont: {
       minHeight: '100vh'

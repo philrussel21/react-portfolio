@@ -27,7 +27,8 @@ export default function Contact() {
       [theme.breakpoints.up('sm')]: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        maxWidth: 500
+        maxWidth: 500,
+        padding: '2.5rem'
       }
     },
     imgBg: {
@@ -43,6 +44,9 @@ export default function Contact() {
     },
     contentCont: {
       marginBottom: '1em'
+    },
+    cardHeading: {
+      fontSize: '2rem'
     }
   }));
 
@@ -73,7 +77,7 @@ export default function Contact() {
               </div>
             </CardMedia>
             <CardContent>
-              <Typography variant='h2'>
+              <Typography variant='h2' className={classes.cardHeading}>
                 Phil Antiporda
               </Typography>
               <Typography variant='subtitle2' display="block">
