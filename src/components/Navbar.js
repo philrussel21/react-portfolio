@@ -75,7 +75,9 @@ export default function Navbar() {
   return (
     <AppBar position="static" className={classes.header}>
       <Toolbar className={classes.toolBar}>
-        <Logo className={classes.logo} />
+        <Link to="/">
+          <Logo className={classes.logo} />
+        </Link>
         <IconButton edge="start" color="inherit" aria-label="menu" aria-haspopup="true" className={classes.btn}
           onClick={handleClick}
         >
