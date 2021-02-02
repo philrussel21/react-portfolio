@@ -51,6 +51,9 @@ const App = () => {
   const useStyles = makeStyles({
     main: {
       flexGrow: 2
+    },
+    cont: {
+      minHeight: '100vh'
     }
   });
 

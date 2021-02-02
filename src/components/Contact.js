@@ -75,7 +75,7 @@ export default function Contact() {
 
                 <Grid item>
                   <Tooltip title="LinkedIn" arrow>
-                    <IconButton href="https://www.linkedin.com/in/philantiporda/" target="_blank" aria-label="Linkedin">
+                    <IconButton color="primary" href="https://www.linkedin.com/in/philantiporda/" target="_blank" aria-label="Linkedin">
                       <LinkedInIcon fontSize="large" />
                     </IconButton>
                   </Tooltip>
@@ -84,7 +84,7 @@ export default function Contact() {
 
                 <Grid item>
                   <Tooltip title="Email" arrow>
-                    <IconButton href="mailto: phil.antiporda21@gmail.com" target="_blank" aria-label="Email">
+                    <IconButton color="primary" href="mailto: phil.antiporda21@gmail.com" target="_blank" aria-label="Email">
                       <MailIcon fontSize="large" />
                     </IconButton>
                   </Tooltip>
@@ -92,7 +92,7 @@ export default function Contact() {
 
                 <Grid item>
                   <Tooltip title="Github" arrow>
-                    <IconButton href="https://github.com/philrussel21" target="_blank" aria-label="Github">
+                    <IconButton color="primary" href="https://github.com/philrussel21" target="_blank" aria-label="Github">
                       <GitHubIcon fontSize="large" />
                     </IconButton>
                   </Tooltip>
@@ -100,7 +100,7 @@ export default function Contact() {
 
                 <Grid item>
                   <Tooltip title="Twitter" arrow>
-                    <IconButton href="https://twitter.com/PeelRasel" target="_blank" aria-label="Twitter">
+                    <IconButton color="primary" href="https://twitter.com/PeelRasel" target="_blank" aria-label="Twitter">
                       <TwitterIcon fontSize="large" />
                     </IconButton>
                   </Tooltip>
@@ -108,7 +108,7 @@ export default function Contact() {
 
                 <Grid item>
                   <Tooltip title="Download Resume" arrow>
-                    <IconButton href={resume} download="PhilAntiporda_Resume.pdf" aria-label="Resume">
+                    <IconButton color="primary" href={resume} download="PhilAntiporda_Resume.pdf" aria-label="Resume">
                       <DescriptionIcon fontSize="large" />
                     </IconButton>
                   </Tooltip>
