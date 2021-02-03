@@ -20,8 +20,7 @@ export default function NavLinks() {
       textAlign: 'center',
     },
     navLink: {
-      fontFamily: `"Bungee", "cursive"`,
-      fontSize: '2.5rem'
+      letterSpacing: 2
     }
   });
 
