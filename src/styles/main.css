@@ -15,4 +15,12 @@ a:hover {
 .makeStyles-btn-75:hover {
   color: #ffba49;
 }
+
+.hover:hover {
+  background: #141c3a;
+}
+
+.hover-text:hover {
+  opacity: 1;
+}
 /*# sourceMappingURL=main.css.map */

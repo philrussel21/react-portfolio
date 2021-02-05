@@ -1,57 +1,68 @@
-import React from 'react';
-import { Grid, Card, CardContent } from '@material-ui/core';
+import React, { useState } from 'react';
+import { Grid, Card, CardContent, Zoom, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-
-// TODOs
-// - Projects effects/animations
-// - change favicon
-// - page not found
-// - padding/margin in the footer
-// - loading state for images
-// - show navigation on Projects page: either make nav pos: fixed or restructure content
 
 
 export default function ProjectDiv({ children, content, bgDesign }) {
-  // for next feature
-  // const [isHovering, setIsHovering] = useState(false);
-  const useStyles = makeStyles({
+  const [isHovering, setIsHovering] = useState(false);
+  const useStyles = makeStyles(theme => ({
     cardCont: {
       display: 'flex',
       justifyContent: 'center'
     },
-    card: bgDesign
-  });
+    cardContHover: {
+      display: 'flex',
+      justifyContent: 'center',
+      opacity: 0,
+      transition: 'linear opacity 0.5s'
+    },
+    card: bgDesign,
+    cardContTxt: {
+      width: 100,
+      height: 100,
+      [theme.breakpoints.up('sm')]: {
+        width: 250,
+        height: 250
+      }
+    }
+  }));
 
-  // for next feature
-  // const handleMouseOver = () => {
-  //   setIsHovering(!isHovering);
-  // };
+  const handleMouseOver = () => {
+    setIsHovering(!isHovering);
+  };
 
   const classes = useStyles();
 
   return (
-    // Working
-    // <Grid item xs={12}
-    //   onMouseEnter={handleMouseOver}
-    //   onMouseLeave={handleMouseOver}
-    // >
-    //   <Card>
-    //     {isHovering
-    //       ?
-    //       <h2>{content}</h2>
-    //       :
-    //       <CardContent className={classes.cardCont}>
-    //         {children}
-    //       </CardContent>
-    //     }
-    //   </Card>
-    // </Grid>
-    <Grid item xs={12} md={6}>
-      <Card className={classes.card}>
-        <CardContent className={classes.cardCont}>
-          {children}
-        </CardContent>
+    <Grid item xs={12} md={6}
+      onMouseEnter={handleMouseOver}
+      onMouseLeave={handleMouseOver}
+    >
+      <Card className={classes.card + " hover"}>
+        {isHovering
+          ?
+          <CardContent className={classes.cardContHover + " hover-text"}>
+            <div className={classes.cardContTxt}>
+              <Typography variant="subtitle1">
+                {content}
+              </Typography>
+            </div>
+          </CardContent>
+          :
+          <CardContent className={classes.cardCont}>
+            <Zoom in={!isHovering}>
+              {children}
+            </Zoom>
+          </CardContent>
+        }
       </Card>
     </Grid>
+    // <Grid item xs={12} md={6}>
+    //   <Card className={classes.card}>
+    //     <CardContent className={classes.cardCont}>
+    //       {children}
+    //     </CardContent>
+    //   </Card>
+    // </Grid>
   );
 }
