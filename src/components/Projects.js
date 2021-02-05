@@ -23,6 +23,9 @@ export default function Projects() {
         height: 250
       }
     },
+    cont: {
+      marginTop: '5em'
+    },
     contentCont: {
       marginBottom: '1em'
     }
@@ -69,7 +72,7 @@ export default function Projects() {
 
   const classes = useStyles();
   return (
-    <Container>
+    <Container className={classes.cont}>
       <Grid container direction="column">
         <Grid item className={classes.contentCont}>
           <Typography variant="h1" align="center">

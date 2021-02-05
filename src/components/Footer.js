@@ -16,7 +16,8 @@ export default function Footer() {
       alignItems: 'flex-end',
       justifyContent: 'center',
       maxWidth: 600,
-      height: 200
+      height: 200,
+      paddingBottom: '1em'
     }
   });
 
