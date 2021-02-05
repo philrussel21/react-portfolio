@@ -1,8 +1,8 @@
 {
-  "airGear": "Sample content",
-  "kewlors": "Sample content",
-  "longShot": "Sample content",
-  "orbisFoods": "Sample content",
-  "curtainCo": "Sample content",
-  "github": "Sample content"
+  "airGear": "Two-sided marketplace app for trading aviation parts.",
+  "kewlors": "Interactive single page app to approach colour harmony through colour wheel algorithms.",
+  "longShot": "Interactive basketball web app that also features favourite player and team stats.",
+  "orbisFoods": "Full-stack app that connects recipe authors and readers made interactive with Maps API",
+  "curtainCo": "Ecommerce web app developed for a client business to promote and sell curtains.",
+  "github": "Want to see more? Visit my Github page."
 }
