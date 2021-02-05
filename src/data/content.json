@@ -1,0 +1,33 @@
+{
+    "airGear": {
+        "str": "Two-sided marketplace app for trading aviation parts.",
+        "live": "https://airgear-aerospace.herokuapp.com/",
+        "src": "https://github.com/philrussel21/AirGear-Aerospace-marketplace"
+    },
+    "kewlors": {
+        "str": "Interactive single page app to approach colour harmony through colour wheel algorithms.",
+        "live": "https://kewlors.netlify.app/",
+        "src": "https://github.com/philrussel21/kewlors"
+    },
+    "longShot": {
+        "str": "Interactive basketball web app that also features favourite player and team stats.",
+        "live": "https://hackathon-basketball-api.netlify.app/",
+        "src": "https://github.com/philrussel21/js-hackathon"
+    },
+    "orbisFoods": {
+        "str": "Full-stack app that connects recipe authors and readers made interactive with Maps API",
+        "live": false,
+        "src": "https://github.com/philrussel21/recipe-hackathon"
+    },
+    "curtainCo": {
+        "str": "Ecommerce web app developed for a client business to promote and sell curtains.",
+        "live": "https://thecurtainco.netlify.app/",
+        "src": "https://github.com/philrussel21/curtain_co_fe_prod"
+    },
+    "github": {
+        "str": "Want to see more? Visit my Github page.",
+        "github": true,
+        "live": false,
+        "src": "https://github.com/philrussel21"
+    }
+}

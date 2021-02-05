@@ -17,3 +17,14 @@ a {
     color: #ffba49
   }
 }
+
+.hover {
+  &:hover {
+    background: #141c3a;
+  }
+}
+.hover-text {
+  &:hover {
+    opacity: 1;
+  }
+}
