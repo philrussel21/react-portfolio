@@ -32,7 +32,7 @@ export default function Navbar() {
 
 
   return (
-    <AppBar position="static" className={classes.header}>
+    <AppBar position="fixed" className={classes.header}>
       <Toolbar className={classes.toolBar}>
         <Link to="/">
           <Logo className={classes.logo} />
