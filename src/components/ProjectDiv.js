@@ -51,20 +51,22 @@ export default function ProjectDiv({ children, content, bgDesign }) {
         {isHovering
           ?
           <CardContent className={classes.cardContHover + " hover-text"}>
-            <Grid container direction="column" justify="center" alignContent="space-between" className={classes.cardContTxt}>
+            <Grid container direction="column" justify="space-around" alignItems="center" className={classes.cardContTxt}>
               <Grid item>
                 <Typography variant="h6" align="center">
-                  {content}
+                  {content.str}
                 </Typography>
               </Grid>
               <Grid item container justify="space-around">
-                <Tooltip title="Live App" arrow>
-                  <IconButton color="inherit" className={classes.projBtn}>
-                    <PublicIcon />
-                  </IconButton>
-                </Tooltip>
-                <Tooltip title="Source code" arrow>
-                  <IconButton color="inherit" className={classes.projBtn}>
+                {content.live &&
+                  <Tooltip title="Live App" arrow>
+                    <IconButton color="inherit" className={classes.projBtn} href={content.live}>
+                      <PublicIcon />
+                    </IconButton>
+                  </Tooltip>
+                }
+                <Tooltip title={content.github ? "Github" : "Source code"} arrow>
+                  <IconButton color="inherit" className={classes.projBtn} href={content.src}>
                     <CodeIcon />
                   </IconButton>
                 </Tooltip>
