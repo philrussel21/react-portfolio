@@ -26,6 +26,11 @@ export default function Projects() {
         height: 250
       }
     },
+    cont: {
+      [theme.breakpoints.up('md')]: {
+        marginTop: '5em'
+      }
+    },
     contentCont: {
       marginBottom: '1em'
     }
