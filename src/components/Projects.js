@@ -26,9 +26,6 @@ export default function Projects() {
         height: 250
       }
     },
-    cont: {
-      marginTop: '5em'
-    },
     contentCont: {
       marginBottom: '1em'
     }

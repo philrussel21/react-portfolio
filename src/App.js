@@ -52,16 +52,20 @@ theme.typography.h2 = {
 };
 
 const App = () => {
-  const useStyles = makeStyles({
+  const useStyles = makeStyles((theme) => ({
     main: {
       flexGrow: 2,
       maxWidth: 900,
-      margin: 'auto'
+      marginLeft: 'auto',
+      marginRight: 'auto'
     },
     cont: {
-      minHeight: '100vh'
+      minHeight: '100vh',
+      [theme.breakpoints.down('sm')]: {
+        marginTop: '5em'
+      }
     }
-  });
+  }));
 
   const classes = useStyles();
   return (
