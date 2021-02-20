@@ -61,7 +61,10 @@ const App = () => {
       flexGrow: 2,
       maxWidth: 900,
       marginLeft: 'auto',
-      marginRight: 'auto'
+      marginRight: 'auto',
+      [theme.breakpoints.down('sm')]: {
+        marginBottom: '1em'
+      }
     },
     cont: {
       minHeight: '100vh',

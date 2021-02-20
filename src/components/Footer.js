@@ -1,7 +1,7 @@
 import React from 'react';
 import { ReactComponent as Dev } from '../media/dev.svg';
 import { makeStyles } from '@material-ui/core/styles';
-import { Container } from '@material-ui/core';
+import { Container, Typography } from '@material-ui/core';
 
 
 export default function Footer() {
@@ -13,8 +13,9 @@ export default function Footer() {
     },
     devCont: {
       display: 'flex',
-      alignItems: 'flex-end',
-      justifyContent: 'center',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'flex-end',
       maxWidth: 600,
       height: 200,
       paddingBottom: '1em'
@@ -26,6 +27,9 @@ export default function Footer() {
   return (
     <Container className={classes.devCont}>
       <Dev className={classes.devLogo} />
+      <Typography variant="caption" color="primary">
+        <span>Copyright&copy;</span> Phil Antiporda 2021
+      </Typography>
     </Container>
   );
 }
