@@ -10,6 +10,7 @@ import Contact from './components/Contact';
 import NotFound from './components/NotFound';
 import Footer from './components/Footer';
 import { Grid } from '@material-ui/core';
+import { ScrollToTop } from './components/ScrollToTop';
 
 const theme = createMuiTheme({
   palette: {
@@ -73,12 +74,14 @@ const App = () => {
       <Grid container direction="column" className={classes.cont}>
         <Navbar />
         <Grid item container alignItems="center" className={classes.main}>
-          <Router style={{ width: '100%' }}>
-            <Home path="/" />
-            <About path="/about" />
-            <Projects path="/projects" />
-            <Contact path="/contact" />
-            <NotFound default />
+          <Router primary={false} style={{ width: '100%' }}>
+            <ScrollToTop path="/">
+              <Home path="/" />
+              <About path="/about" />
+              <Projects path="/projects" />
+              <Contact path="/contact" />
+              <NotFound default />
+            </ScrollToTop>
           </Router>
         </Grid>
         <Grid item container direction="column-reverse" className={classes.footer}>
