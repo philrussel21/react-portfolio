@@ -94,7 +94,7 @@ export default function ProjectDiv({ children, content, bgDesign }) {
           }
         </Card>
         :
-        <Link href={link}>
+        <Link href={link} target="_blank">
           <Card className={classes.card}>
             <CardContent className={classes.cardCont}>
               {children}
