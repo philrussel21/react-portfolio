@@ -71,22 +71,22 @@ export default function HamburgerNav() {
       onClose={handleClose}
     >
       <Link to="/">
-        <StyledMenuItem>
+        <StyledMenuItem onClick={handleClose}>
           <ListItemText primary="Home" />
         </StyledMenuItem>
       </Link>
       <Link to="/about">
-        <StyledMenuItem>
+        <StyledMenuItem onClick={handleClose}>
           <ListItemText primary="About" />
         </StyledMenuItem>
       </Link>
       <Link to="/projects">
-        <StyledMenuItem>
+        <StyledMenuItem onClick={handleClose}>
           <ListItemText primary="Projects" />
         </StyledMenuItem>
       </Link>
       <Link to="/contact">
-        <StyledMenuItem>
+        <StyledMenuItem onClick={handleClose}>
           <ListItemText primary="Contact" />
         </StyledMenuItem>
       </Link>
