@@ -44,9 +44,6 @@ export default function Contact() {
     },
     contentCont: {
       marginBottom: '1em'
-    },
-    cardHeading: {
-      fontSize: '2rem'
     }
   }));
 
@@ -77,7 +74,7 @@ export default function Contact() {
               </div>
             </CardMedia>
             <CardContent>
-              <Typography variant='h2' className={classes.cardHeading}>
+              <Typography variant='h2'>
                 Phil Antiporda
               </Typography>
               <Typography variant='subtitle2' display="block">

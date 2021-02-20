@@ -45,11 +45,14 @@ theme.typography.h1 = {
   },
 };
 theme.typography.h2 = {
+  // ...defaultTypography.h2,
+  // fontSize: '3.75rem',
+  // [theme.breakpoints.down('md')]: {
+  //   fontSize: '2rem',
+  // },
   ...defaultTypography.h2,
-  fontSize: '3.75rem',
-  [theme.breakpoints.down('md')]: {
-    fontSize: '2rem',
-  },
+  fontSize: '2rem',
+
 };
 
 const App = () => {
