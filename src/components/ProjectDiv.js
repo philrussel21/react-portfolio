@@ -72,13 +72,13 @@ export default function ProjectDiv({ children, content, bgDesign }) {
                 <Grid item container justify="space-around">
                   {content.live &&
                     <Tooltip title="Live App" arrow>
-                      <IconButton color="inherit" className={classes.projBtn} href={content.live}>
+                      <IconButton color="inherit" className={classes.projBtn} href={content.live} target="_blank">
                         <PublicIcon />
                       </IconButton>
                     </Tooltip>
                   }
                   <Tooltip title={content.github ? "Github" : "Source code"} arrow>
-                    <IconButton color="inherit" className={classes.projBtn} href={content.src}>
+                    <IconButton color="inherit" className={classes.projBtn} href={content.src} target="_blank">
                       <CodeIcon />
                     </IconButton>
                   </Tooltip>
