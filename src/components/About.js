@@ -75,6 +75,7 @@ export default function About() {
                 <Grid container spacing={1}>
                   <Icon img={html} alt="HTML5" />
                   <Icon img={css} alt="CSS3" />
+                  <Icon img={sass} alt="SASS" />
                   <Icon img={js} alt="Javacript" />
                   <Icon img={ruby} alt="Ruby" />
                   <Icon img={rails} alt="Ruby on Rails" />
