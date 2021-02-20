@@ -47,6 +47,12 @@ export default function Contact() {
     }
   }));
 
+  const handleResumeDownload = (e) => {
+    if (!window.confirm(`Download Phil Antiporda's Resume?`)) {
+      e.preventDefault()
+    }
+  }
+
   const classes = useStyles();
 
   return (
@@ -117,7 +123,7 @@ export default function Contact() {
 
                 <Grid item>
                   <Tooltip title="Download Resume" arrow>
-                    <IconButton color="primary" href={resume} download="PhilAntiporda_Resume.pdf" aria-label="Resume">
+                    <IconButton color="primary" onClick={handleResumeDownload} href={resume} download="PhilAntiporda_Resume.pdf" aria-label="Resume">
                       <DescriptionIcon fontSize="large" />
                     </IconButton>
                   </Tooltip>
