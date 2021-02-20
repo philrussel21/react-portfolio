@@ -54,7 +54,7 @@ export default function About() {
           </Grid>
           <Grid item>
             <Typography variant="body1" align="center">
-              I love adventures and new experiences. I like treating challenges as opportunities and failures as lessons. As a developer, I acknowledge and practice the need to constantly update, learn and apply new skills to be adaptable, a better problem solver and a successful risk-taker. In my leisure, I enjoy travelling and trying new things to expand my horizon.
+              I like treating challenges as opportunities and failures as lessons. I tackle big problems into smaller digestible pieces to bring constant progress, thus applying the agile methodology. As a developer, I acknowledge and practice the need to constantly update, learn and apply new skills to be adaptable, a better problem solver and a successful risk-taker. I love adventures and new experiences. In my leisure, I enjoy travelling and trying new things to expand my horizon.
             </Typography>
           </Grid>
         </Grid>
