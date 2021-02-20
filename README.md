@@ -1,27 +1,20 @@
+## Live site
+
+[Phil Antiporda's Portfolio Site](https://philantiporda.netlify.app/)
+
+## About the App
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) using the basic template.
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Created with:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[Create React App](https://github.com/facebook/create-react-app)
+[Material UI](https://material-ui.com/)
+[Reach Router](https://reach.tech/router/)
 
-### Code Splitting
+## Any Suggestions ?
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Installation
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
+Clone the repo, `cd` to directory and run command:
+`npm install`
