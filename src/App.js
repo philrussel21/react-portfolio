@@ -61,16 +61,16 @@ const App = () => {
       flexGrow: 2,
       maxWidth: 900,
       marginLeft: 'auto',
-      marginRight: 'auto',
-      [theme.breakpoints.down('sm')]: {
-        marginBottom: '1em'
-      }
+      marginRight: 'auto'
     },
     cont: {
       minHeight: '100vh',
       [theme.breakpoints.down('sm')]: {
         marginTop: '5em'
       }
+    },
+    footer: {
+      marginTop: '1em'
     }
   }));
 
