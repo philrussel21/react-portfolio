@@ -18,7 +18,11 @@ export default function Home() {
       backgroundColor: "#7d2020"
     },
     pill: {
-      borderRadius: 25
+      borderRadius: 25,
+      '&:hover': {
+        color: '#ffba49',
+        backgroundColor: '#7d2020'
+      }
     }
   });
 
@@ -44,7 +48,7 @@ export default function Home() {
         </Grid>
         <Grid item>
           <Link to="/projects">
-            <Button variant="contained" color="secondary" size="large" className={classes.pill}>
+            <Button variant="contained" color="primary" size="large" className={classes.pill}>
               See my work
           </Button>
           </Link>
